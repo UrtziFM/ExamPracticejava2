@@ -12,7 +12,7 @@ public class Excepciones extends Exception {
      public static int convertirNumero(String input) throws NumberFormatException {
         int numero = Integer.parseInt(input);
         if(numero < 0) {
-            throw new NumberFormatException("Error: El número ingresado es negativo.");
+            throw new NumberFormatException();
         } 
         return numero;
     }
